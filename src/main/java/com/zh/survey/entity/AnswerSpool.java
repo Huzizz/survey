@@ -48,7 +48,7 @@ public class AnswerSpool implements Serializable{
 	 * 问卷题目
 	 */
 	@Field("questions")
-	private List<Question> list;
+	private List<Question> questionList;
 	
 	/**
 	 * 状态
@@ -94,12 +94,13 @@ public class AnswerSpool implements Serializable{
 		this.quesName = quesName;
 	}
 
-	public List<Question> getList() {
-		return list;
+
+	public List<Question> getQuestionList() {
+		return questionList;
 	}
 
-	public void setList(List<Question> list) {
-		this.list = list;
+	public void setQuestionList(List<Question> questionList) {
+		this.questionList = questionList;
 	}
 
 	public Integer getStatus() {
@@ -121,8 +122,8 @@ public class AnswerSpool implements Serializable{
 	@Override
 	public String toString() {
 		return "AnswerSpool [answerSpoolId=" + answerSpoolId + ", userId=" + userId + ", quesnaireId=" + quesnaireId
-				+ ", quesName=" + quesName + ", list=" + list + ", status=" + status + ", createTime=" + createTime
-				+ "]";
+				+ ", quesName=" + quesName + ", questionList=" + questionList + ", status=" + status + ", createTime="
+				+ createTime + "]";
 	}
 
 

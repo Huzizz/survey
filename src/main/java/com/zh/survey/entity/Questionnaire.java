@@ -43,7 +43,7 @@ public class Questionnaire implements Serializable{
 	 * 问卷题目
 	 */
 	@Field("questions")
-	private List<Question> list;
+	private List<Question> questionList;
 	
 	/**
 	 * 发布总数
@@ -113,12 +113,13 @@ public class Questionnaire implements Serializable{
 		this.quesName = quesName;
 	}
 
-	public List<Question> getList() {
-		return list;
+
+	public List<Question> getQuestionList() {
+		return questionList;
 	}
 
-	public void setList(List<Question> list) {
-		this.list = list;
+	public void setQuestionList(List<Question> questionList) {
+		this.questionList = questionList;
 	}
 
 	public Integer getPublishTotal() {
@@ -181,12 +182,8 @@ public class Questionnaire implements Serializable{
 	@Override
 	public String toString() {
 		return "Questionnaire [quesnaireId=" + quesnaireId + ", publishUserId=" + publishUserId + ", quesName="
-				+ quesName + ", list=" + list + ", publishTotal=" + publishTotal + ", receiveTotal=" + receiveTotal
-				+ ", completeTotal=" + completeTotal + ", taskStatus=" + taskStatus + ", status=" + status
-				+ ", createTime=" + createTime + ", completeTime=" + completeTime + "]";
+				+ quesName + ", questionList=" + questionList + ", publishTotal=" + publishTotal + ", receiveTotal="
+				+ receiveTotal + ", completeTotal=" + completeTotal + ", taskStatus=" + taskStatus + ", status="
+				+ status + ", createTime=" + createTime + ", completeTime=" + completeTime + "]";
 	}
-
-	
-	
-	
 }

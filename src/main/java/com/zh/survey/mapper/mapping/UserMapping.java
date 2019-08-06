@@ -29,7 +29,6 @@ public class UserMapping implements UserMapper {
                 .set("nick_name", user.getNickName())
                 .set("status", user.getStatus())
                 .set("create_time", user.getCreateTime());
-        //更新查询返回结果集的第一条
         mongoTemplate.updateFirst(query, update, User.class);
 	}
 
