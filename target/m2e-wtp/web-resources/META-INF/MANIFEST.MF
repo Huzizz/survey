@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: survey
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Jim Green
+Implementation-Vendor-Id: com.zh.survey
+Build-Jdk: 1.8.0_144
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/survey
+Created-By: Maven Integration for Eclipse
+
